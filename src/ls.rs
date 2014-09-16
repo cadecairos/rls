@@ -66,6 +66,7 @@ pub fn get_target(matches: getopts::Matches) -> Path {
   }
 }
 
+// read a given Path and output a vector of paths it contains
 pub fn read(dir: Path) -> Vec<Path> {
   match fs::readdir(&dir) {
     Ok(paths) => { paths },
